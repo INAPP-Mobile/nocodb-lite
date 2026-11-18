@@ -25,7 +25,7 @@ The deploy form has zero fields — the template wires everything. These are the
 |---|---|---|
 | `PGHOST` | `${{postgres.RAILWAY_PRIVATE_DOMAIN}}` (auto) | Postgres host over the private network |
 | `PGPASSWORD` | `${{postgres.POSTGRES_PASSWORD}}` (auto) | Postgres password from the companion |
-| `NC_DB` | composed at boot: `pg://<PGHOST>:5432?u=nocodb&p=<PGPASSWORD>&d=nocodb` | NocoDB metadata database URL; set it yourself to use an external database instead |
+| `NC_DB` | composed at boot: `pg://{PGHOST}:5432?u=nocodb&p={PGPASSWORD}&d=nocodb` | NocoDB metadata database URL; set it yourself to use an external database instead |
 
 **Auth & app:**
 
